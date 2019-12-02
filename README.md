@@ -18,5 +18,6 @@
 A collection of Open Source Tools that have been published for this game.
 
 ## CONFIG-FILES
-Self Written Documented Configuration files for the game
+Self Written, Documented, & Formatted Configuration files for the game.
 
+This includes the games completed undocumented HitmanBloodMoney.ini & HMGPAD.CFG
