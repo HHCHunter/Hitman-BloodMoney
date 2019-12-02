@@ -1,13 +1,13 @@
 # Hitman: Blood Money
 
-### RELEASES
+### RELEASES / BUILDS
 
  - PLATFORM: PC
    - 1.2	- GOG - blood-build3-20060616-26123
    - 1.2	- STEAM - blood-build3-20060601-26089
    - 1.0 - PHYSICAL RELEASE - blood-build4-20060508-25990 - USA		
    - PRE-RELEASE	(DEMO) - RANDOM MEDIA RELEASE - blood-build3-20060517-26039
- - PLATFORM: Xbox
+ - PLATFORM: XBOX
    - PRE-RELEASE	(DEMO) - toolsbuild-20060112-21662 - USA - IM-32983
  - PLATFORM: PS2
    - 1.0 / RELEASE - blood-build3-20060403-25595 - USA - SLUS-21108
