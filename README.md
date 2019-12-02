@@ -2,6 +2,7 @@
 Tools and code for Hitman Blood Money
 
 ## RELEASES
+`
 PLATFORM: PC
 	1.2	- GOG - blood-build3-20060616-26123
 	1.2	- STEAM - blood-build3-20060601-26089
@@ -13,3 +14,4 @@ PLATFORM: PS2
 	1.0 / RELEASE - blood-build3-20060403-25595 - USA - SLUS-21108
 PLATFORM: PS3
 	1.0 / RELEASE - Unknown - USA - BLUS30942
+`
