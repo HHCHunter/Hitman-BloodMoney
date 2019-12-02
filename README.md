@@ -14,10 +14,10 @@
 4. PLATFORM: PS3
    - 1.0 / RELEASE - Unknown - USA - BLUS30942
 
-## TOOLS
-A collection of Open Source Tools that have been published for this game.
-
 ## CONFIG-FILES
 Self Written, Documented, & Formatted Configuration files for the game.
 
 This includes the games completed undocumented HitmanBloodMoney.ini & HMGPAD.CFG
+
+## TOOLS
+A collection of Open Source Tools that have been published for this game.
