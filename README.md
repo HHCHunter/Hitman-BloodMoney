@@ -1,7 +1,6 @@
 # Hitman-BloodMoney
-Tools and code for Hitman Blood Money
 
-## RELEASES
+### RELEASES
 
 1. PLATFORM: PC
    - 1.2	- GOG - blood-build3-20060616-26123
@@ -14,3 +13,10 @@ Tools and code for Hitman Blood Money
    - 1.0 / RELEASE - blood-build3-20060403-25595 - USA - SLUS-21108
 4. PLATFORM: PS3
    - 1.0 / RELEASE - Unknown - USA - BLUS30942
+
+## TOOLS
+A collection of Open Source Tools that have been published for this game.
+
+## CONFIG-FILES
+Self Written Documented Configuration files for the game
+
