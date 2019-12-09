@@ -8,8 +8,9 @@ Formatted, Documented & Commented Hand Written & Configuration files for the gam
 
 This this is the engine configuration file.
 
-This is written for 4K resolution, considering the game is quite old & easy to run at high resolution.
-It is intended to have as much debug options enabled, without impacting performance negatively.
+This is written for the following scenario, but can be re-configured as required.
+* 4K Resolution
+* Debug Options Enabled
 
 ### HMGPAD.CFG
 
