@@ -4,4 +4,10 @@ Formatted, Documented & Commented Hand Written & Configuration files for the gam
 
 ## The aim of this folder is to document the .ini and .cfg files.
 
-This includes the games completely undocumented HitmanBloodMoney.ini & HMGPAD.CFG
+### HitmanBloodMoney.ini / MAIN.ini
+
+This this is the engine configuration file.
+
+### HMGPAD.CFG
+
+This is the controller / keypad configuration file.
