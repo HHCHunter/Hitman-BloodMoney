@@ -12,6 +12,7 @@
    - PRE-RELEASE	(DEMO) - toolsbuild-20060112-21662 - USA - IM-32983
  - PLATFORM: PS2
    - 1.0 / RELEASE - blood-build3-20060403-25595 - USA - SLUS-21108
+   - ? / DEMO - blood-build3-20060124-22440 - SLUS 29191
  - PLATFORM: PS3
    - 1.0 / RELEASE - Unknown - USA - BLUS30942
 
