@@ -4,7 +4,7 @@
 
 #### Retail Releases
 
-| PLATFORM | PATCH VERSION | Release Type / Vendor   | Build String                   | REGION | DISC ID    |
+| PLATFORM | PATCH VERSION | Release Type / Vendor   | Build String                   | REGION | TITLE ID   |
 |----------|---------------|-------------------------|--------------------------------|--------|------------|
 | PC       | 1.2           | DIGITAL / GOG           | blood-build3-20060616-26123    | N/A    |            |
 | PC       | 1.2           | DIGITAL / STEAM         | blood-build3-20060601-26089    | N/A    |            |
@@ -16,7 +16,7 @@
 
 #### Retail Demos
 
-| PLATFORM | PATCH VERSION | Release Type / Vendor   | Build String                   | REGION | DISC ID    |
+| PLATFORM | PATCH VERSION | Release Type / Vendor   | Build String                   | REGION | TITLE ID   |
 |----------|---------------|-------------------------|--------------------------------|--------|------------|
 | PC       | DEMO          | DEMO                    | blood-build3-20060517-26039    | N/A    |            |
 | XBOX     | DEMO          | DEMO                    | toolsbuild-20060112-21662      | USA    | IM-32983   |
@@ -24,9 +24,9 @@
 
 #### Pre-Releases
 
-| PLATFORM | PATCH VERSION | Release Type / Vendor   | Build String                   | REGION | DISC ID    |
+| PLATFORM | PATCH VERSION | Release Type / Vendor   | Build String                   | REGION | TITLE ID   |
 |----------|---------------|-------------------------|--------------------------------|--------|------------|
-| N/A      | N/A           | N/A                     | N/A                            | N/A    | N/A        |
+| PS2      | 0.5           | BETA                    | blood-build-ps2-20060118-21982 | USA    | N/A        |
 
 ## CONFIG-FILES
 Formatted, Documented & Commented Hand Written & Configuration files for the game.
