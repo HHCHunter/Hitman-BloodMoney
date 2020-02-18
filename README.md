@@ -31,7 +31,7 @@
 ## CONFIG-FILES
 Formatted, Documented & Commented Hand Written & Configuration files for the game.
 
-This includes the games completely undocumented HitmanBloodMoney.ini & HMGPAD.CFG
+This includes the games completely undocumented HitmanBloodMoney.ini & HM3GPAD.cfg
 
 ## TOOLS
 A collection of Open Source Tools that have been published for this game.
