@@ -12,7 +12,7 @@ This is written for the following scenario, but can be re-configured as required
 * 4K Resolution
 * Debug Options Enabled
 
-### HMGPAD.CFG
+### HM3GPAD.cfg
 
 This is the controller / keypad configuration file.
 
