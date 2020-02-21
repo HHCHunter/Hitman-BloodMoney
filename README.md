@@ -6,12 +6,12 @@
 
 | PLATFORM | VERSION       | Release Type / Vendor   | Build String                     | REGION | TITLE ID   |
 |----------|---------------|-------------------------|----------------------------------|--------|------------|
-| PC       | 1.2           | DIGITAL / GOG           | blood-build3-20060616-26123      | N/A    |            |
-| PC       | 1.2           | DIGITAL / STEAM         | blood-build3-20060601-26089      | N/A    |            |
+| PC       | 1.2           | DIGITAL / GOG           | blood-build3-20060616-26123      |        |            |
+| PC       | 1.2           | DIGITAL / STEAM         | blood-build3-20060601-26089      |        |            |
 | PC       | 1.2           | PHYSICAL RETAIL RELEASE | blood-build3-20060616-26123      | UK     |            |
 | PC       | 1.0           | PHYSICAL RETAIL RELEASE | blood-build4-20060508-25990      | USA    |            |
 |          |               |                         |                                  |        |            |
-| XBOX     | NA            | PHYSICAL RETAIL RELEASE | xbox-bloodbuild-20060317-25332   | AUS    | 534300FA   |
+| XBOX     |               | PHYSICAL RETAIL RELEASE | xbox-bloodbuild-20060317-25332   | AUS    | 534300FA   |
 |          |               |                         |                                  |        |            |
 | Xbox 360 | 0.0.0.9       | DIGITAL / Xbox Live     | blood-build-xenon-20060422-25827 | USA    | 534307DB   |
 |          |               |                         |                                  |        |            |
@@ -21,17 +21,17 @@
 | PS2      | 1.00          | PHYSICAL RETAIL RELEASE | blood-build4-20060403-25599      | GER    | SLES-53030 |
 | PS2      | 1.00          | PHYSICAL RETAIL RELEASE | blood-build4-20060403-25599      | ITA    | SLES-53031 |
 | PS2      | 1.00          | PHYSICAL RETAIL RELEASE | blood-build4-20060403-25599      | SPA    | SLES-53032 |
-| PS3      | NA            | PHYSICAL RETAIL RELEASE |                                  | USA    | BLUS30942  |
+| PS3      |               | PHYSICAL RETAIL RELEASE |                                  | USA    | BLUS30942  |
 
 #### Retail Demos
 
 | PLATFORM | VERSION       | Release Type / Vendor   | Build String                   | REGION | TITLE ID   |
 |----------|---------------|-------------------------|--------------------------------|--------|------------|
-| PC       | N/A           | DEMO                    | blood-build3-20060517-26039    | N/A    |            |
+| PC       |               | DEMO                    | blood-build3-20060517-26039    |        |            |
 |          |               |                         |                                |        |            |
-| XBOX     | N/A           | DEMO                    | toolsbuild-20060112-21662      | USA    | IM-32983   |
+| XBOX     |               | DEMO                    | toolsbuild-20060112-21662      | USA    | IM-32983   |
 |          |               |                         |                                |        |            |
-| PS2      | N/A           | DEMO                    | blood-build3-20060124-22440    |        | SLUS 29191 |
+| PS2      |               | DEMO                    | blood-build3-20060124-22440    |        | SLUS 29191 |
 
 #### Pre-Releases
 
