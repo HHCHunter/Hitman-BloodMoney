@@ -12,6 +12,11 @@
 | PC       | 1.0           | PHYSICAL RETAIL RELEASE | blood-build4-20060508-25990    | USA    |            |
 | XBOX     | RELEASE       | PHYSICAL RETAIL RELEASE | xbox-bloodbuild-20060317-25332 | AUS    | 534300FA   |
 | PS2      | RELEASE       | PHYSICAL RETAIL RELEASE | blood-build3-20060403-25595    | USA    | SLUS-21108 |
+| PS2      | RELEASE       | PHYSICAL RETAIL RELEASE | blood-build3-20060403-25595    | EUR    | SLES-53028 |
+| PS2      | RELEASE       | PHYSICAL RETAIL RELEASE | blood-build4-20060403-25599    | FRA    | SLES-53029 |
+| PS2      | RELEASE       | PHYSICAL RETAIL RELEASE | blood-build4-20060403-25599    | GER    | SLES-53030 |
+| PS2      | RELEASE       | PHYSICAL RETAIL RELEASE | blood-build4-20060403-25599    | ITA    | SLES-53031 |
+| PS2      | RELEASE       | PHYSICAL RETAIL RELEASE | blood-build4-20060403-25599    | SPA    | SLES-53032 |
 | PS3      | RELEASE       | PHYSICAL RETAIL RELEASE |                                | USA    | BLUS30942  |
 
 #### Retail Demos
