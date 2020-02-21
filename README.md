@@ -31,7 +31,7 @@
 |          |               |                         |                                |        |            |
 | XBOX     |               | DEMO                    | toolsbuild-20060112-21662      | USA    | IM-32983   |
 |          |               |                         |                                |        |            |
-| PS2      |               | DEMO                    | blood-build3-20060124-22440    | USA    | SLUS-29191 |
+| PS2      | 1.00          | DEMO                    | blood-build3-20060124-22440    | USA    | SLUS-29191 |
 
 #### Pre-Releases
 
