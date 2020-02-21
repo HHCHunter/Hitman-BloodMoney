@@ -18,6 +18,7 @@
 | PS2      | RELEASE       | PHYSICAL RETAIL RELEASE | blood-build4-20060403-25599    | ITA    | SLES-53031 |
 | PS2      | RELEASE       | PHYSICAL RETAIL RELEASE | blood-build4-20060403-25599    | SPA    | SLES-53032 |
 | PS3      | RELEASE       | PHYSICAL RETAIL RELEASE |                                | USA    | BLUS30942  |
+| Xbox 360 | 0.0.0.9       | DIGITAL / Xbox Live     | blood-build-xenon-20060422-25827 | USA    | 534307DB   |
 
 #### Retail Demos
 
