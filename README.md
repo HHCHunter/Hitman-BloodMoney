@@ -37,7 +37,7 @@
 
 | PLATFORM | VERSION       | Release Type / Vendor   | Build String                   | REGION | TITLE ID   |
 |----------|---------------|-------------------------|--------------------------------|--------|------------|
-| PS2      | 0.5           | BETA                    | blood-build-ps2-20060118-21982 | USA    |            |
+| PS2      | 0.5           | BETA                    | blood-build-ps2-20060118-21982 | USA    | SLES-53028 |
 
 ## CONFIG-FILES
 Formatted, Documented & Commented Hand Written & Configuration files for the game.
