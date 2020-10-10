@@ -40,9 +40,9 @@
 | PS2      | 0.5           | BETA                    | blood-build-ps2-20060118-21982 | USA    | SLES-53028 |
 
 ## CONFIG-FILES
-Formatted, Documented & Commented Hand Written & Configuration files for the game.
+Formatted, Documented & Commented; Hand Written Configuration files for Hitman: Blood Money.
 
-This includes the games completely undocumented HitmanBloodMoney.ini & HM3GPAD.cfg
+This for the originally undocumented HitmanBloodMoney.ini & HM3GPAD.cfg
 
 ## TOOLS
 A collection of Open Source Tools that have been published for this game.
