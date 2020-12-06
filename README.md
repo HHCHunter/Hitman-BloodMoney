@@ -10,6 +10,8 @@
 | PC       | 1.2           | DIGITAL / STEAM         | blood-build3-20060601-26089      |        |            |
 | PC       | 1.2           | PHYSICAL RETAIL RELEASE | blood-build3-20060616-26123      | UK     |            |
 | PC       | 1.0           | PHYSICAL RETAIL RELEASE | blood-build4-20060508-25990      | USA    |            |
+| PC       | 1.0           | PHYSICAL RETAIL RELEASE | blood-build4-20060508-25990      | USA    |            |
+| PC       | 1.?           | ?                       | blood-build3-20060713-26152      | RUS    |            |
 |          |               |                         |                                  |        |            |
 | XBOX     |               | PHYSICAL RETAIL RELEASE | xbox-bloodbuild-20060317-25332   | AUS    | 534300FA   |
 |          |               |                         |                                  |        |            |
