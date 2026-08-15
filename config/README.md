@@ -5,18 +5,19 @@ Both files shipped with no documentation; these copies carry per-setting comment
 
 | File | Purpose |
 |---|---|
-| [`HitmanBloodMoney.ini`](HitmanBloodMoney.ini) | Engine configuration — graphics, audio, gameplay, scripting, debug. Also referred to as `MAIN.ini`. |
+| [`HitmanBloodMoney.ini`](HitmanBloodMoney.ini) | Engine configuration: graphics, audio, gameplay, scripting, debug. Also referred to as `MAIN.ini`. |
 | [`HM3GPAD.cfg`](HM3GPAD.cfg) | Controller and keyboard bindings, including the debug and cheat keys. |
 
-📖 **[Full configuration reference →](../docs/config-reference.md)** — every section explained,
-plus the binding expression syntax used by `HM3GPAD.cfg`.
+**[Full configuration reference](../docs/config-reference.md)**: every section explained, plus the
+binding expression syntax used by `HM3GPAD.cfg`.
 
 ## What these are configured for
 
 The provided `HitmanBloodMoney.ini` is written for one specific scenario:
 
-- **4K resolution** (`3840x2160`), 8×AA, 16× anisotropic filtering, maximum texture and shadow detail
-- **Debug options enabled** — console, cheats, debug key bindings and on-screen debug output
+- **4K resolution** (`3840x2160`), 8x AA, 16x anisotropic filtering, maximum texture and shadow
+  detail
+- **Debug options enabled**: console, cheats, debug key bindings and on-screen debug output
 
 It is meant to be re-configured to taste rather than used as-is. Every setting is commented in
 place, so lowering the resolution or turning the debug output off is a matter of editing the
@@ -24,7 +25,7 @@ relevant line.
 
 ## Installing
 
-Both files belong in the game's root directory, alongside the executable — the same folder that
+Both files belong in the game's root directory, alongside the executable, in the same folder that
 contains `Scenes/`. The engine reads `HitmanBloodMoney.ini` at startup, and the `ConfigFile`
 setting inside it points at `HM3GPAD.cfg`.
 
@@ -36,6 +37,9 @@ setting inside it points at `HM3GPAD.cfg`.
   ignore this file completely. Leave it at `0`.
 - Uncommenting `BuildTag` **freezes the game on boot**.
 
-Debug bindings in the `DebugKeys` block of `HM3GPAD.cfg` do not work on retail builds — see
+Debug bindings in the `DebugKeys` block of `HM3GPAD.cfg` do not work on retail builds. See
 [Enabling the debug features](../docs/config-reference.md#enabling-the-debug-features) for the
 workaround.
+
+The console releases use smaller equivalents of these two files under different names. See
+[Console variants](../docs/config-reference.md#console-variants).

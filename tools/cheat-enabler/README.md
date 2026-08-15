@@ -8,8 +8,8 @@ writes the flag directly into process memory, re-asserting it once per second so
 
 ## Credits
 
-- Original enabler by **ZoID** — <http://forums.eidosgames.com/showthread.php?t=61298>
-- Improved and fixed for Steam by **RDJ** — <http://roguedarkjedi.com>
+- Original enabler by **ZoID**: <http://forums.eidosgames.com/showthread.php?t=61298>
+- Improved and fixed for Steam by **RDJ**: <http://roguedarkjedi.com>
 
 Reported by the program itself as *"Cheat Menu enabler V1.12"*. See
 [Third-party components](../README.md#third-party-components) regarding licensing.
@@ -21,7 +21,7 @@ Reported by the program itself as *"Cheat Menu enabler V1.12"*. See
 
 1. Launch *Hitman: Blood Money* and leave it running.
 2. Run the enabler.
-3. Choose your version when prompted — `1` for Steam, `2` for original CD retail.
+3. Choose your version when prompted: `1` for Steam, `2` for original CD retail.
 4. Once you are in gameplay, press **`C`** to open the cheat console.
 
 Leave the tool running while you play. It polls the game every second and will report if the
@@ -37,7 +37,7 @@ exists:
 | Steam | `0x8ABA89` |
 | Original CD retail | `0x8ACA89` |
 
-If neither works, your build is a different one from the two this tool knows about — see
+If neither works, your build is a different one from the two this tool knows about. See
 [releases.md](../../docs/releases.md) for the catalogue of known builds.
 
 ## Building

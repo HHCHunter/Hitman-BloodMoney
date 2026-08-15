@@ -2,8 +2,8 @@
 
 Notes on the save-game format used by *Hitman: Blood Money*.
 
-> **Status: research in progress.** This page is a placeholder — the format has not been
-> documented here yet.
+> **Status: research in progress.** This page is a placeholder. The format has not been documented
+> here yet.
 
 ## Scope
 
@@ -12,7 +12,7 @@ rather than in the game folder. A profile there consists of:
 
 | File | Notes |
 |---|---|
-| `Profile.pro` | Profile data — progression and unlocks. |
+| `Profile.pro` | Profile data: progression and unlocks. |
 | `SaveGame#N.control` | Save slot control/header data. |
 | `SaveGame#N.data` | Save slot payload. |
 | `SaveInfo` | Slot index. |
@@ -27,5 +27,5 @@ The `#N` suffix increments per save slot.
 - Whether the format is shared with the console releases, or PC-specific.
 - What is stored in `Profile.pro` versus the individual save slots.
 
-Contributions welcome — see [releases.md](releases.md) for the build catalogue, since save format
+Contributions welcome. See [releases.md](releases.md) for the build catalogue, since save format
 differences are most likely to track platform and build.

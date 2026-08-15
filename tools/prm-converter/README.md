@@ -12,7 +12,7 @@ Reports itself as *PRM to OBJ Converter 0.3 (8/14/2006)*. See
 
 ## Usage
 
-Takes exactly one argument — the PRM file to dump:
+Takes exactly one argument, the PRM file to dump:
 
 ```
 PRMConvert <PRM File>
@@ -37,7 +37,7 @@ noting it as a possible model. These are unhandled formats rather than errors.
 | [`bin/PRMConvert.exe`](bin/) | Prebuilt Windows binary from the original author, provided for convenience. |
 
 The binary is included as originally distributed. If you would rather not run an unsigned
-executable of unknown provenance, build from source instead — it is a single file with no
+executable of unknown provenance, build from source instead. It is a single file with no
 dependencies.
 
 ## Building
