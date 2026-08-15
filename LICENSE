@@ -1,0 +1,38 @@
+MIT License
+
+Copyright (c) 2017-2026 Daniel Hunter (HHCHunter)
+
+SCOPE OF THIS LICENSE
+
+This license applies to the documentation and configuration files authored in
+this repository - specifically the contents of the "docs" and "config"
+directories, and the README files throughout.
+
+It does NOT apply to:
+
+  * The contents of the "tools" directory. Those tools are the work of their
+    respective original authors, are included here under the terms under which
+    they were originally published, and copyright in them remains with those
+    authors. See tools/README.md for attribution.
+
+  * Any Hitman: Blood Money game assets, trademarks, or intellectual property.
+    This repository is unaffiliated with and unendorsed by IO Interactive,
+    Eidos Interactive, or Square Enix. No game assets are distributed here.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
