@@ -24,8 +24,8 @@ continued into July.
 | Platform | First known build | Last known build |
 |---|---|---|
 | Xbox | 2006-01-12 *(demo)* | 2006-03-17 *(retail)* |
-| PS2 | 2006-01-18 *(beta)* | 2006-04-03 *(retail)* |
-| Xbox 360 | 2006-04-09 *(review build)* | 2006-04-22 *(Xbox Live)* |
+| PS2 | 2006-01-18 *(prototype)* | 2006-04-03 *(retail)* |
+| Xbox 360 | 2006-04-09 *(prototype)* | 2006-04-22 *(Xbox Live)* |
 | PC | 2006-05-08 *(retail 1.0)* | 2006-07-13 *(RUS)* |
 
 Full tables, the build-string grammar and the decoding notes are in
@@ -50,9 +50,9 @@ under their original terms. See [Third-party components](tools/README.md#third-p
 
 Corrections and additions are welcome, particularly:
 
-- Build strings for releases not yet catalogued, especially the **PS3 release** and the
-  **Xbox 360 review build**, both of which are currently listed without one.
-- Confirmation of the two flagged inconsistencies in the release tables.
+- A build string for the **PS3 release**, the only entry still without one.
+- Tying the magazine and bonus [demo discs](docs/releases.md#demo-distributions) to specific
+  builds. Most are catalogued only as physical items.
 - Anything on the [save file format](docs/saves.md).
 
 ## License

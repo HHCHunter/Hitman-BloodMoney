@@ -243,9 +243,9 @@ running process.
 ## Console variants
 
 The console releases use the same two-file arrangement with different names and much smaller
-contents. The following was read from the Xbox 360 review build disc documented in
-[releases.md](releases.md#the-xbox-360-review-build), where the files sit in the disc root as
-`main.ini` and `hmbgpad.cfg`.
+contents. The following was read from the Xbox 360 review build disc listed in
+[releases.md](releases.md#all-known-builds), where the files sit in the disc root as `main.ini`
+and `hmbgpad.cfg`.
 
 The Xbox 360 `main.ini` is 63 bytes in total:
 
@@ -278,3 +278,61 @@ CheatsMenuGC=&&hold(gc,right_trigger) hold(gc,right_thumb) hold(gc,left_trigger)
 
 That is right trigger plus right thumbstick plus left trigger held together, the console
 counterpart of the PC `CheatsMenuGC` binding on `p`.
+
+### PlayStation 2
+
+Read from the PS2 magazine demo disc `SCED_54044` (build `22981`, see
+[releases.md](releases.md#all-known-builds)), where the same two files sit under `HITMAN/` as
+`MAIN.INI` and `HM3GPAD.CFG`.
+
+The PS2 `MAIN.INI` is 166 bytes:
+
+```
+ProjectPath host0:
+DefaultScene=bootmenu.gms
+ConfigFile=hm3gpad.cfg
+
+ConsoleCmd show_debuggeoms 0
+ConsoleCmd show_debug 0
+
+BuildTag Demo
+PS2VideoConfigPAL 1
+```
+
+Four things are worth drawing out of that:
+
+- **`BuildTag` is genuinely used, and holds a build-variant name.** The PC file documents this
+  setting as one that freezes the game on boot if uncommented, so its purpose was unclear. Here
+  it is active with the value `Demo`. The setting works; what the retail PC executable rejects is
+  presumably the value, not the key.
+- **`ProjectPath host0:`** points at the PS2 development kit's host filesystem, which is the
+  path a build machine would load from. It shipped on pressed retail media unchanged.
+- **`DefaultScene=bootmenu.gms`**, where the PC file boots `HitmanBloodMoney.gms`. The demo
+  disc carries a matching `SCENES/BOOTMENU.*` scene set.
+- The two `ConsoleCmd` debug lines are present but explicitly set to `0`, rather than being
+  commented out or absent.
+
+Note also the boot chain. The disc's `SYSTEM.CNF` reads:
+
+```
+BOOT2=cdrom0:\SCED_540.44;1
+VER=1.00
+VMODE=PAL
+```
+
+`SCED_540.44` is the magazine's multi-game front-end, which then launches
+`HITMAN/HITMAN.ELF`; the game's own configuration is not consulted until that point.
+
+The PS2 `HM3GPAD.CFG` is 2,302 bytes and has the same three-block structure as the Xbox 360 file
+above, `ZWINDOWSKEYS_1`, `HMControl` and `DeathSequenceInput`, with no debug blocks. Only the
+control names differ, using the PlayStation set: `cross`, `circle`, `triangle`, `square`,
+`left1`, `right1`, `left2`, `right2`, `leftstick`, `rightstick`, `start` and `select`.
+
+Its cheat binding is:
+
+```
+CheatsMenuGC=&& hold(gc,right1) hold(gc,right2) tap(gc,up);
+```
+
+R1 plus R2 held with Up tapped. So all three platforms retain a controller cheat-menu chord, on
+different inputs.
