@@ -279,6 +279,45 @@ CheatsMenuGC=&&hold(gc,right_trigger) hold(gc,right_thumb) hold(gc,left_trigger)
 That is right trigger plus right thumbstick plus left trigger held together, the console
 counterpart of the PC `CheatsMenuGC` binding on `p`.
 
+### Xbox
+
+Read from the demo on *Official Xbox Magazine* Game Disc 57 (build `21662`), where the files sit
+under `HitmanBloodmoney/` as `main.ini` and `hmbgpad.cfg`.
+
+The Xbox `main.ini` is 205 bytes, and unlike the other two consoles it exposes real tunables:
+
+```
+DefaultScene=HitmanBloodMoney.gms
+ConfigFile=hmbgpad.cfg
+UseGameController
+GammaValue 1.0
+MouseSpeedX 0.7
+MouseSpeedY 0.7
+SoundBuffers 64
+DisableOptions
+AUDIO_HighQualityResampling
+BuildTag Demo
+```
+
+Points of interest:
+
+- `BuildTag Demo` again, as on PS2. Two independent console builds carry it, which further
+  supports the reading that the key is functional and only the PC retail executable objects.
+- `MouseSpeedX` and `MouseSpeedY` are present on a console with no mouse, and are split into two
+  axes where the PC file has a single `MouseSpeed`. Leftovers from the PC codebase.
+- `DefaultScene` is `HitmanBloodMoney.gms`, matching the PC rather than the PS2 demo's
+  `bootmenu.gms`.
+- `AUDIO_HighQualityResampling` and `SoundBuffers` appear here as bare top-level keys rather than
+  inside the `[AUDIO]` section the PC file uses; the console files have no section headings at all.
+
+The Xbox `hmbgpad.cfg` is 2,325 bytes with the same three blocks as the other consoles. Its
+control names are the original Xbox set: `a`, `b`, `x`, `y`, `black`, `left_trigger`,
+`right_trigger`, `left_thumb`, `right_thumb`, `back`, `start` and `dpad_*`.
+
+The clearest generational marker is `ReloadWeapon=tap(gc,black);`, bound to the original Xbox
+controller's Black button, which has no equivalent on the Xbox 360 pad. The Xbox 360 file binds
+the same action to `right_shoulder`.
+
 ### PlayStation 2
 
 Read from the PS2 magazine demo disc `SCED_54044` (build `22981`, see

@@ -46,6 +46,30 @@ Pre-release discs are also labelled with a shortened form of the same revision, 
 `<revision>-PR`. The PS2 prototype below is named `21982-PR`, matching the `21982` in its build
 string.
 
+### Xbox and Xbox 360 are separate releases
+
+The game shipped on both Microsoft consoles, as two distinct SKUs built from different code, and
+the two are easy to conflate. In the table below **Xbox** always means the original 2001 console
+and **Xbox 360** always means the 2005 one; neither is ever shorthand for the other.
+
+|                    | Xbox                     | Xbox 360                    |
+|--------------------|--------------------------|-----------------------------|
+| Build string prefix | `xbox-bloodbuild-`      | `blood-build-xenon-`        |
+| Executable          | `default.xbe` (XBE)      | `default.xex` (XEX2)        |
+| Title ID            | `534300FA`               | `534307DB`                  |
+| Redump disc serial  | `SC-250`                 | not recorded here           |
+| Known retail build  | `25332`, 2006-03-17      | `25827`, 2006-04-22         |
+| Demo                | OXM Game Disc 57, `21662` | Xbox Live download, 2006-05-24 |
+
+Both consoles use the XDVDFS filesystem, so a disc image's filesystem does not identify which one
+it is. The executable does: `default.xbe` means original Xbox, `default.xex` means Xbox 360.
+
+Two things generate persistent confusion in listings and catalogues. The Xbox 360 plays original
+Xbox discs through backward compatibility, so an Xbox disc is often advertised as working on a
+360. And *Official Xbox Magazine* cover discs from 2006 carried demos for both consoles on one
+disc, which is why the same disc gets listed as an Xbox item by some sellers and an Xbox 360 item
+by others.
+
 ### `build3` / `build4` is not a version number
 
 It is tempting to read `build4` as "newer than `build3`". It is not. The data contradicts it in
@@ -88,11 +112,11 @@ is marked accordingly.
 
 | BUILD DATE | REV   | PLATFORM | TYPE      | VERSION | Release Type / Vendor   | Build String                     | REGION | TITLE ID           |
 |------------|-------|----------|-----------|---------|-------------------------|----------------------------------|--------|--------------------|
-| 2006-01-12 | 21662 | XBOX     | DEMO      |         | DEMO                    | toolsbuild-20060112-21662        | USA    | IM-32983           |
+| 2006-01-12 | 21662 | Xbox     | DEMO      |         | MAGAZINE COVER DISC     | toolsbuild-20060112-21662        | USA    | IM-32983[^oxm57]   |
 | 2006-01-18 | 21982 | PS2      | PROTOTYPE | 0.5     | BETA, `21982-PR`        | blood-build-ps2-20060118-21982   | EUR    | SLES-53028[^ps2id] |
 | 2006-01-24 | 22440 | PS2      | DEMO      | 1.00    | DEMO                    | blood-build3-20060124-22440      | USA    | SLUS-29191         |
 | 2006-02-02 | 22981 | PS2      | DEMO      |         | MAGAZINE COVER DISC     | blood-build3-20060202-22981      | EUR    | SCED-54044[^ops2m] |
-| 2006-03-17 | 25332 | XBOX     | RETAIL    |         | PHYSICAL RETAIL RELEASE | xbox-bloodbuild-20060317-25332   | AUS    | 534300FA           |
+| 2006-03-17 | 25332 | Xbox     | RETAIL    |         | PHYSICAL RETAIL RELEASE | xbox-bloodbuild-20060317-25332   | AUS    | 534300FA[^xboxdisc] |
 | 2006-04-03 | 25595 | PS2      | RETAIL    | 1.01    | PHYSICAL RETAIL RELEASE | blood-build3-20060403-25595      | USA    | SLUS-21108         |
 | 2006-04-03 | 25595 | PS2      | RETAIL    | 2.00    | PHYSICAL RETAIL RELEASE | blood-build3-20060403-25595      | EUR    | SLES-53028         |
 | 2006-04-03 | 25599 | PS2      | RETAIL    | 1.00    | PHYSICAL RETAIL RELEASE | blood-build4-20060403-25599      | FRA    | SLES-53029         |
@@ -105,11 +129,33 @@ is marked accordingly.
 | 2006-05-08 | 25990 | PC       | RETAIL    | 1.0     | PHYSICAL RETAIL RELEASE | blood-build4-20060508-25990      | USA    |                    |
 | 2006-05-08 | 25990 | PC       | RETAIL    | 1.0     | PHYSICAL RETAIL RELEASE | blood-build4-20060508-25990      | USA    | [^dup]             |
 | 2006-05-17 | 26039 | PC       | DEMO      |         | DEMO                    | blood-build3-20060517-26039      |        |                    |
+| 2006-05-24 | n/a   | Xbox 360 | DEMO      |         | DIGITAL / Xbox Live     | *unrecovered*[^x360demo]         |        | none published     |
 | 2006-06-01 | 26089 | PC       | RETAIL    | 1.2     | DIGITAL / STEAM         | blood-build3-20060601-26089      |        |                    |
 | 2006-06-16 | 26123 | PC       | RETAIL    | 1.2     | DIGITAL / GOG           | blood-build3-20060616-26123      |        |                    |
 | 2006-06-16 | 26123 | PC       | RETAIL    | 1.2     | PHYSICAL RETAIL RELEASE | blood-build3-20060616-26123      | UK     |                    |
 | 2006-07-13 | 26152 | PC       | RETAIL    | 1.?     | ?                       | blood-build3-20060713-26152      | RUS    |                    |
 | n/a        | n/a   | PS3      | RETAIL    |         | PHYSICAL RETAIL RELEASE | *unknown*                        | USA    | BLUS30942          |
+
+[^oxm57]: *Official Xbox Magazine* Game Disc 57 (USA), the May 2006 cover disc, read directly from
+a dump. The demo is at `HitmanBloodmoney/hitmanbloodmoney.xbe`, an **XBE**, so it is an original
+Xbox build; the disc's audio stream is likewise `XBox_Eng.s01`, not the `XBox2_Eng` naming used on
+Xbox 360 media. Its XBE certificate gives title name `Hitman Bloodmoney`, region `0x1`, version
+`0x46` and title ID `0x494D80D7` -- which is where `IM-32983` comes from, since bytes `0x49 0x4D`
+are ASCII `IM` and the low word `0x80D7` is 32983 decimal. The XBE header timestamp is
+**2006-01-12 16:36:48 UTC**, matching the build string's date exactly and supplying a time of day
+the string cannot. Both XBEs on the disc share a certificate timestamp of 2006-03-06 20:49:14 UTC,
+its certification date, roughly two months before the May issue shipped.
+
+The disc is dual-console: alongside the Xbox shell `default.xbe` (title `OXM Disc 57`, same title
+ID) it carries `default.xex` plus `OXM360/` and `Timeshift360/` for Xbox 360. **No Xbox 360 Hitman
+content is present** -- the 360 side holds only the Timeshift demo and magazine front-end. So this
+disc supplies the Xbox demo and not the 360 one.
+
+The XBE also retains its build machine's output path, `z:\code\out\_xbox\gamerelease\hitman3.exe`,
+which confirms the `hitman3` internal project name on Xbox as well as Xbox 360, where the XEX
+records the module as `hitman3.pe`. The same executable resolves its configuration through
+`d:\main.ini`; on Xbox the `D:` drive maps to the directory an executable was launched from, not
+the disc root, which is how the demo finds its own `main.ini` while sitting in a subfolder.
 
 [^ps2id]: Catalogued by Hidden Palace as the *Jan 20, 2006 prototype*, build name `21982-PR`,
 serial `SLES-53028`. The serial is a PAL one, so the region is recorded here as EUR rather than
@@ -145,6 +191,18 @@ racing-themed compilation and contains no Hitman content at all, so regional dis
 not consistent between editions. This is a distinct build from the standalone PS2 demo
 `SLUS-29191` above, nine days later at 541 revisions further on.
 
+[^xboxdisc]: Three original Xbox retail discs are catalogued by Redump, all under disc serial
+`SC-250`; see [Xbox retail discs](#xbox-retail-discs) below. Only this one has had its build
+string read. Note that `SC-250` is Redump's disc catalogue serial and `534300FA` is the Xbox title
+ID from the executable; they are different identifiers, not alternatives.
+
+[^x360demo]: Downloadable demo published to Xbox Live Marketplace on 2006-05-24, announced by
+Microsoft, 783 MB, and explicitly **not offered in Germany or Japan**. The date in the table is
+its publication date, not a decoded build date, since no build string has been recovered. It is a
+separate release from the Xbox demo above, which is an original Xbox build on physical media, and
+from the two Xbox 360 prototype discs. Marketplace has since shut down, so recovering the build
+string depends on a preserved copy of the download.
+
 [^dup]: This row duplicates the one above it verbatim in the source data. Retained rather than
 deleted in case the two entries were meant to record distinct printings that were never
 differentiated. Needs confirmation against physical media.
@@ -172,6 +230,35 @@ been catalogued under the date of its pressing rather than the date of its build
 
 ---
 
+## Xbox retail discs
+
+Redump catalogues three original Xbox retail discs, all sharing disc serial `SC-250`. Only the
+English-language disc has had its build string read so far, so the German and French discs are
+listed here rather than as table rows: it is not established whether they carry the same build.
+
+| Region  | Barcode                          | CRC-32     | SHA-1                                      | Mastering code  | Catalogued |
+|---------|----------------------------------|------------|--------------------------------------------|-----------------|------------|
+| English | `5 021290 024724`, `7 88687 20035 6` | `aacd69b1` | `d1bb5ee052dba93f69502060be826a2b278c6b81` | `SC25001W-SC`   | 2013-09-18 |
+| France  | `5 021290 024748`                | `00cabacc` | `bba46bf264c940f7ff9ccd8c5227310f06d214ef` | `SC25002E-SC`   | 2021-08-10 |
+| Germany | `5 021290 024755`                | `a4b36c91` | `7027ed86f38f8a1ac25a5f1f3df425fc824c1fdf` | `SC25003E-SC`   | 2012-08-26 |
+
+All three are DVD-9, 3,820,880 sectors, 7,825,162,240 bytes, layerbreak 1913776, and share the
+same PFI `8FC52135`. Their DMI and security-sector values differ per disc, as do their content
+hashes, so these are three genuinely distinct pressings rather than one disc catalogued three
+times.
+
+The mastering codes encode the region: `SC25001W` carries a `W` and the other two carry `E`.
+The English disc also records XMID `SC25001W` and Eidos ID `MHTBMBUS01`, and carries a North
+American UPC alongside the European EAN, so despite being catalogued under a single region it
+appears to cover more than one territory. The German disc records Eidos ID `MHTBMBGE01`, with
+`SHTBMBGE04` on the manual and `PHTBMBGE07` on the inlay.
+
+Reading the XBE from the German or French disc would settle whether the European releases share
+the `25332` build or were built separately, and would be the single most useful addition to the
+Xbox side of this catalogue.
+
+---
+
 ## Demo distributions
 
 The demo builds in the table above reached the public through several different discs and
@@ -180,7 +267,7 @@ build string confirmed, so they are listed separately rather than given table ro
 
 | Vehicle | Platform | Notes |
 |---|---|---|
-| Official Xbox Magazine #57, May 2006 | Xbox / Xbox 360 | Cover-mounted demo disc. Also carried demos for Dreamfall: The Longest Journey, Over the Hedge and Marc Ecko's Getting Up. Relationship to the `IM-32983` demo above is unconfirmed. |
+| Official Xbox Magazine #57, May 2006 | Xbox and Xbox 360 | **Resolved into the table above** as the Xbox demo, build `21662`. The disc genuinely serves both consoles, which is why sellers list it variously as an Xbox or an Xbox 360 item, but its only Hitman content is the original Xbox XBE. |
 | Official PlayStation 2 Magazine Demo Disc 72 | PS2 | **Resolved into the table above** as build `22981`. The Europe disc (`SCED_54044`) carries a playable Hitman: Blood Money demo alongside 24: The Game, Black, Driver: Parallel Lines, We Love Katamari, Outrun 2006: Coast 2 Coast, TOCA Race Driver 3, Sonic Riders and Tomb Raider: Legend, with Rogue Galaxy as video only, matching the published UK contents list exactly. France (`SCED_54144`) carries the same executable. Germany (`SCED_54051`) carries no Hitman content. |
 | *Hitman: Blood Money / Urban Chaos: Riot Response* | PS2 | A combined Eidos demo disc, catalogued by Redump as disc 58126. Details unverified; redump.org was unreachable at the time of writing. |
 | Bonus Demo disc | PS2 | Packaged with some retail copies. Catalogued by Redump as disc 50413. Unverified. |
@@ -245,7 +332,9 @@ the revision.
   - [Jan 20, 2006 prototype (PS2)](https://hiddenpalace.org/Hitman:_Blood_Money_(Jan_20,_2006_prototype))
   - [Apr 11, 2006 prototype (Xbox 360)](https://hiddenpalace.org/Hitman:_Blood_Money_(Apr_11,_2006_prototype))
   - [Apr 12, 2006 prototype (Xbox 360)](https://hiddenpalace.org/Hitman:_Blood_Money_(Apr_12,_2006_prototype))
-- [Redump: Hitman: Blood Money](http://redump.org/disc/490/)
+- [Redump: Hitman: Blood Money](http://redump.org/disc/490/), and the Microsoft Xbox entries
+  under [system search](http://redump.org/discs/system/xbox/quicksearch/hitman/)
+- [Xbox Wire: Hitman: Blood Money demo, 24 May 2006](https://news.xbox.com/en-us/2006/05/24/hitman-blood-money-demo/)
 - [Internet Archive: Hitman: Blood Money Demo (PC)](https://archive.org/details/HitmanBloodMoney_201403)
 - [Centre for Computing History: PS2 Official Magazine UK Demo Disc 72, May 2006](https://www.computinghistory.org.uk/det/56226/Playstation-2-Official-Magazine-UK-Demo-Disc-72-May-2006)
 
